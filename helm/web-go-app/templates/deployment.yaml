@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-go-app
+  labels:
+    app: web-go-app
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: web-go-app
+  template:
+    metadata:
+      labels:
+        app: web-go-app
+    spec:
+      containers:
+      - name: web-go-app
+        image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+        ports:
+        - containerPort: 8080

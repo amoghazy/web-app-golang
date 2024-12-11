@@ -2,4 +2,4 @@ replicaCount: 2
 
 image:
   name: "amoghazy/web-go-app"
-  tag: "059719c19ec3791936b2961c6f266cba1af809e5"
+  tag: "6704cd052ddbbbc06047e9689c214d1d053c6ddd"

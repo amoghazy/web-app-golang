@@ -136,7 +136,11 @@ cd web-app-golang
    git commit -m "Update image tag"
    git push
    ```
-
+#### if need update code must pull before push changes 
+   ```bash
+       git pull origin main 
+   ```
+   because GitHub Actions 
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
